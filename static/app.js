@@ -124,7 +124,7 @@ function drawGrid(padding, plotW, plotH, xMin, xMax, yMin, yMax, xScale, yScale)
   for (let az = xMin; az <= xMax; az += 30) {
     const x = xScale(az);
     line(x, padding.top, x, padding.top + plotH);
-    ctx.fillText(String(az), x, padding.top + plotH + 14);
+    //ctx.fillText(String(az), x, padding.top + plotH + 14);
   }
 
   ctx.textAlign = "right";
@@ -134,7 +134,7 @@ function drawGrid(padding, plotW, plotH, xMin, xMax, yMin, yMax, xScale, yScale)
   for (let el = first; el <= yMax; el += step) {
     const y = yScale(el);
     line(padding.left, y, padding.left + plotW, y);
-    ctx.fillText(String(Math.round(el)), padding.left - 12, y);
+    //ctx.fillText(String(Math.round(el)), padding.left - 12, y);
   }
 
   ctx.strokeStyle = colors.ink;
@@ -144,12 +144,12 @@ function drawGrid(padding, plotW, plotH, xMin, xMax, yMin, yMax, xScale, yScale)
   ctx.fillStyle = colors.ink;
   ctx.textAlign = "center";
   ctx.textBaseline = "bottom";
-  ctx.fillText("Azimuth, degrees clockwise from true north", padding.left + plotW / 2, canvas.height - 10);
+  //ctx.fillText("Azimuth, degrees clockwise from true north", padding.left + plotW / 2, canvas.height - 10);
 
   ctx.save();
   ctx.translate(22, padding.top + plotH / 2);
   ctx.rotate(-Math.PI / 2);
-  ctx.fillText("Elevation angle, degrees", 0, 0);
+  //ctx.fillText("Elevation angle, degrees", 0, 0);
   ctx.restore();
 }
 
@@ -211,7 +211,7 @@ function drawRises(rises, xScale, yScale) {
     ctx.fillText(rise.time.local_label.slice(11, 16), x + 16, y - 12);
   });
 }
-
+/*
 function drawLegend() {
   ctx.font = "22px system-ui, sans-serif";
   ctx.textAlign = "left";
@@ -219,6 +219,7 @@ function drawLegend() {
   legendItem(86, 34, colors.horizon, "Terrain horizon");
   legendItem(312, 34, colors.moon, "Moon path near moonrise");
 }
+*/
 
 function legendItem(x, y, color, label) {
   ctx.strokeStyle = color;
