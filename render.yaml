@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: terrain-moonrise
+    runtime: docker
+    plan: free
+    region: oregon
+    branch: main
+    autoDeployTrigger: commit
+    healthCheckPath: /health

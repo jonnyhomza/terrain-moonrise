@@ -11,6 +11,11 @@ def index():
     return send_from_directory(app.static_folder, "index.html")
 
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
 @app.get("/api/moonrise")
 def moonrise():
     date_string = request.args.get("date", "").strip()
