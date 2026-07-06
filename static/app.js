@@ -106,7 +106,7 @@ function drawChart(data) {
   ctx.fillStyle = colors.panel;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  drawGrid(padding, plotW, plotH, xMin, xMax, yMin, yMax, xScale, yScale);
+  //drawGrid(padding, plotW, plotH, xMin, xMax, yMin, yMax, xScale, yScale);
   drawLine(data.horizon_profile, xScale, yScale, colors.horizon, 3);
   drawSegmentedMoonPath(data.moon_path, xScale, yScale);
   drawRises(data.rises, xScale, yScale);
