@@ -94,11 +94,11 @@ function drawChart(data) {
     ...data.moon_path.map((p) => p.elevation_deg),
     ...data.rises.map((p) => p.elevation_deg),
   ];
-  const yMin = Math.floor(Math.min(-2, ...allElevations) - 1);
-  const yMax = Math.ceil(Math.max(12, ...allElevations) + 1);
-  const xMin = data.plot.azimuth_min_deg;
-  const xMax = data.plot.azimuth_max_deg;
-
+  const yCenter = (Math.min(...allElevations) + Math.max(...allElevations)) / 2;
+  const yRange = (Math.max(...allElevations) - Math.min(...allElevations)) * 1.35;
+  const yMin = yCenter - yRange / 2;
+  const yMax = yCenter + yRange / 2;
+  
   const xScale = (az) => padding.left + ((az - xMin) / (xMax - xMin)) * plotW;
   const yScale = (el) => padding.top + (1 - ((el - yMin) / (yMax - yMin))) * plotH;
 
