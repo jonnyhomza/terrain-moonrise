@@ -85,7 +85,7 @@ function drawEmptyChart(label = "Waiting for date") {
 function drawChart(data) {
   sizeCanvas();
 
-  const padding = { left: 72, right: 28, top: 34, bottom: 62 };
+  const padding = { left: 28, right: 28, top: 34, bottom: 62 };
   const plotW = canvas.width - padding.left - padding.right;
   const plotH = canvas.height - padding.top - padding.bottom;
 
