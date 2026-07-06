@@ -1,0 +1,9 @@
+{
+  "name": "Terrain Moonrise",
+  "short_name": "Moonrise",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edf1f5",
+  "theme_color": "#0f172a",
+  "icons": []
+}

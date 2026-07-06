@@ -1,0 +1,6 @@
+Flask>=3.0
+gunicorn; platform_system != "Windows"
+numpy
+pandas
+spiceypy
+tzdata

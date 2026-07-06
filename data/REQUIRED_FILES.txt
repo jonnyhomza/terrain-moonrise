@@ -1,0 +1,7 @@
+Copy these files into this data folder before deploying:
+
+pck00011.tpc
+latest_leapseconds.tls
+earth_1962_250826_2125_combined.bpc
+de440s.bsp
+terrain_horizon_profile_geodesic.csv

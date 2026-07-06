@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
+  <title>Terrain Moonrise</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="toolbar" aria-label="Moonrise controls">
+      <div>
+        <h1>Terrain Moonrise</h1>
+        <p>Anchorage horizon profile</p>
+      </div>
+      <form id="moonForm" class="controls">
+        <label for="dateInput">Date</label>
+        <input id="dateInput" name="date" type="date" required>
+        <button type="submit">Calculate</button>
+      </form>
+    </section>
+
+    <section class="result-band" aria-live="polite">
+      <div id="status" class="status">Choose a date to calculate moonrise.</div>
+      <div id="riseList" class="rise-list"></div>
+    </section>
+
+    <section class="chart-panel" aria-label="Moon path and terrain horizon chart">
+      <canvas id="moonChart" width="1200" height="640"></canvas>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

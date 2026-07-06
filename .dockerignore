@@ -1,0 +1,13 @@
+.git
+.agents
+__pycache__
+*.pyc
+.venv
+venv
+tmp
+*.zip
+*.tif
+*.gpkg
+*.qgz
+custom_download*
+cspice*
