@@ -157,6 +157,7 @@ canvas {
   }
 
   canvas {
-    height: 56vh;
+    height: 36vh;
+    min-height: 240px;
   }
 }
