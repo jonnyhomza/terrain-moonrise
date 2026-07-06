@@ -110,7 +110,7 @@ function drawChart(data) {
   drawLine(data.horizon_profile, xScale, yScale, colors.horizon, 3);
   drawSegmentedMoonPath(data.moon_path, xScale, yScale);
   drawRises(data.rises, xScale, yScale);
-  drawLegend();
+  //drawLegend();
 }
 
 function drawGrid(padding, plotW, plotH, xMin, xMax, yMin, yMax, xScale, yScale) {
