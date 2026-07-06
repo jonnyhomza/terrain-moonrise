@@ -95,7 +95,7 @@ function drawChart(data) {
     ...data.rises.map((p) => p.elevation_deg),
   ];
   const yCenter = (Math.min(...allElevations) + Math.max(...allElevations)) / 2;
-  const yRange = (Math.max(...allElevations) - Math.min(...allElevations)) * 1.35;
+  const yRange = (Math.max(...allElevations) - Math.min(...allElevations)) * 1.85;
   const yMin = yCenter - yRange / 2;
   const yMax = yCenter + yRange / 2;
   
