@@ -99,6 +99,9 @@ function drawChart(data) {
   const yMin = yCenter - yRange / 2;
   const yMax = yCenter + yRange / 2;
   
+  const xMin = data.plot.azimuth_min_deg;
+  const xMax = data.plot.azimuth_max_deg;
+  
   const xScale = (az) => padding.left + ((az - xMin) / (xMax - xMin)) * plotW;
   const yScale = (el) => padding.top + (1 - ((el - yMin) / (yMax - yMin))) * plotH;
 
